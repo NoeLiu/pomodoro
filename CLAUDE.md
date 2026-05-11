@@ -5,11 +5,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build Commands
 
 ```bash
-gcc pomodoro.c -o pomodoro.exe -mwindows
+# 使用 MSYS2/MinGW-w64 编译
+/c/msys64/usr/bin/bash.exe -lc "gcc pomodoro.c -o pomodoro.exe -mwindows -finput-charset=utf-8 -fexec-charset=gbk"
+
+# 运行
 ./pomodoro.exe
 ```
 
-Requires MinGW-w64 compiler (e.g., from `C:/llvm-mingw`).
+Requires MinGW-w64 compiler (e.g., from `C:/msys64`).
 
 ## Architecture
 
